@@ -1,4 +1,5 @@
 function CryptoCoinList({ 
+    num,
     id, 
     symbol, 
     priceChange1h, 
@@ -9,8 +10,11 @@ function CryptoCoinList({
     volume24h 
 }){
 
-    
-
+    return (
+        <>
+            
+        </>
+    )
 }
 
 export default CryptoCoinList;

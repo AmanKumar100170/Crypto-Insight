@@ -5,10 +5,11 @@ function CoinListing({ coinArray = [] }){
     return (
         <>
             <ul>
-                {coinArray.map(coin => 
+                {coinArray.map((coin, index) => 
                     (
-                        <li> 
+                        <li key={index}> 
                             <CryptoCoinList 
+                                num={index+1}
                                 id={coin.id} 
                                 symbol={coin.symbol} 
                                 priceChange1h={coin.priceChange1h} 
